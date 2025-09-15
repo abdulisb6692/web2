@@ -34,12 +34,14 @@ const Footer: React.FC = () => {
           <div className="social-links">
             <p className="follow-text">Follow us</p>
             <ul>
-              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-              <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-              <li><a href="https://bsky.app" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
-              <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
-              <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
+              <li><a href="https://www.linkedin.com/in/absbyabdul" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://x.com/adsbyabdul" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              <li><a href="https://www.instagram.com/adsbyabdul_/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://www.behance.net/adsbyabdul" target="_blank" rel="noopener noreferrer">Behance</a></li>
+              <li><a href="https://www.pinterest.com/adsbyabdul/" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+              <li><a href="https://www.facebook.com/adsbyabdul/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+              <li><a href="https://www.threads.com/@adsbyabdul_" target="_blank" rel="noopener noreferrer">Threads</a></li>
+              <li><a href="https://bsky.app/profile/absbyabdul.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
             </ul>
           </div>
         </div>
@@ -54,7 +56,7 @@ const Footer: React.FC = () => {
           <button className="back-to-top" onClick={handleBackToTop}>
             Back to top ↑
           </button>
-          <p className="copyright">© Copyright 2023 Abdul Mabood</p>
+          <p className="copyright">© Copyright 2025 Abdul Mabood</p>
         </div>
       </div>
     </footer>
