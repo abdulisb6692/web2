@@ -1,0 +1,370 @@
+.hero-section {
+  background: #e5e7eb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  .hero-container {
+    max-width: 1400px; // Increased from 1200px
+    width: 100%;
+    min-height: 80vh;
+    padding: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .hero-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem; // Increased from 4rem
+      align-items: center;
+      flex: 1;
+      margin-bottom: 3rem;
+      min-height: 60vh;
+      padding: 0 2rem; // Added extra padding
+
+      .hero-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .hero-title {
+          font-size: 3.5rem; // Increased from 3rem
+          font-weight: 700;
+          line-height: 1.2;
+          color: #1f2937;
+          margin: 0 0 2rem 0; // Increased margin
+          font-family: "PP Editorial New", serif;
+          max-width: 600px; // Added max-width for better text flow
+
+          .highlight {
+            color: #8B5CF6;
+          }
+        }
+
+        .hero-subtitle {
+          font-size: 1.25rem; // Increased from 1.125rem
+          color: #1e1e1e;
+          line-height: 1.6;
+          margin: 0 0 3rem 0; // Increased margin
+          font-family: "SF Pro Text", sans-serif;
+          max-width: 550px; // Added max-width for better text flow
+        }
+
+        .hero-buttons {
+          display: flex;
+          gap: 2rem; // Increased from 1.5rem
+          align-items: center;
+          margin-top: 1.5rem; // Increased margin
+
+          .btn-primary {
+            background: white;
+            color: #1e293b;
+            border: 2px solid #1e293b;
+            padding: 1rem 2rem;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 0.875rem;
+            font-family: "SF Pro Text", sans-serif;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.4s ease-out;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            min-width: 140px;
+            height: 48px;
+            box-shadow: 6px 6px 0px #1e293b;
+            
+            &:hover {
+              transform: translate(3px, 3px);
+              box-shadow: 3px 3px 0px #1e293b;
+              text-decoration: none;
+            }
+
+            &:active {
+              transform: translate(6px, 6px);
+              box-shadow: 0px 0px 0px #1e293b;
+            }
+
+            &:focus {
+              outline: none;
+              box-shadow: 6px 6px 0px #1e293b, 0 0 0 3px rgba(30, 41, 59, 0.2);
+            }
+          }
+
+          .btn-secondary {
+            background: white;
+            color: #1e293b;
+            border: 2px solid #1e293b;
+            padding: 1rem 2rem;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 0.875rem;
+            font-family: "SF Pro Text", sans-serif;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: all 0.4s ease-out;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            min-width: 140px;
+            height: 48px;
+            box-shadow: 6px 6px 0px #1e293b;
+
+            &:hover {
+              transform: translate(3px, 3px);
+              box-shadow: 3px 3px 0px #1e293b;
+              text-decoration: none;
+              
+              svg {
+                transform: translateX(2px);
+              }
+            }
+
+            &:active {
+              transform: translate(6px, 6px);
+              box-shadow: 0px 0px 0px #1e293b;
+            }
+
+            &:focus {
+              outline: none;
+              box-shadow: 6px 6px 0px #1e293b, 0 0 0 3px rgba(30, 41, 59, 0.2);
+            }
+
+            svg {
+              width: 1rem;
+              height: 1rem;
+              transition: transform 0.4s ease-out;
+            }
+          }
+        }
+      }
+
+      .hero-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .hero-image-container {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .hero-image {
+            position: relative;
+            width: 100%;
+            max-width: 450px; // Increased from 400px
+            height: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.4s ease-out;
+            background: #f5f5f5;
+            padding: 2rem;
+            
+            &:hover {
+              transform: translateY(-10px) scale(1.02);
+              box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+              
+              img {
+                transform: scale(1.1);
+                filter: brightness(0.8) grayscale(0%);
+              }
+              
+              .image-overlay {
+                opacity: 1;
+              }
+            }
+            
+            img {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+              transition: all 0.4s ease-out;
+              filter: grayscale(100%);
+              border-radius: 15px;
+              
+              &:hover {
+                filter: grayscale(0%);
+              }
+            }
+            
+            .image-overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              opacity: 0;
+              transition: all 0.4s ease-out;
+              
+              .overlay-content {
+                text-align: center;
+                color: white;
+                transform: translateY(20px);
+                transition: all 0.4s ease-out;
+                
+                h3 {
+                  font-size: 1.8rem;
+                  font-weight: 700;
+                  margin: 0 0 0.5rem 0;
+                  font-family: "PP Editorial New", serif;
+                }
+                
+                p {
+                  font-size: 1rem;
+                  font-weight: 500;
+                  margin: 0;
+                  font-family: "SF Pro Text", sans-serif;
+                  opacity: 0.9;
+                }
+              }
+              
+              &:hover .overlay-content {
+                transform: translateY(0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 1.5rem;
+    
+    .hero-container {
+      padding: 4rem; // Increased padding
+      
+      .hero-main {
+        grid-template-columns: 1fr;
+        gap: 4rem; // Increased gap
+        text-align: center;
+        padding: 0 1rem; // Added padding
+        
+        .hero-right {
+          order: -1;
+          
+          .hero-image-container {
+            .hero-image {
+              max-width: 380px; // Increased from 350px
+            }
+          }
+        }
+        
+        .hero-left {
+          .hero-title {
+            font-size: 3.2rem; // Slightly increased for tablet
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 1rem;
+    
+    .hero-container {
+      padding: 3rem; // Increased padding
+      
+      .hero-main {
+        gap: 3rem; // Increased gap
+        padding: 0 1rem; // Added padding
+        
+        .hero-right {
+          order: -1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .hero-image-container {
+            .hero-image {
+              max-width: 330px; // Increased from 300px
+            }
+          }
+        }
+        
+        .hero-left {
+          .hero-title {
+            font-size: 2.8rem; // Increased for mobile
+            max-width: 100%; // Full width on mobile
+          }
+          
+          .hero-subtitle {
+            font-size: 1.1rem; // Slightly increased
+            max-width: 100%; // Full width on mobile
+          }
+          
+          .hero-buttons {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 1rem;
+            
+            .btn-primary,
+            .btn-secondary {
+              justify-content: center;
+              padding: 1rem 2rem;
+              font-size: 0.95rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    .hero-container {
+      padding: 1.5rem;
+      
+      .hero-main {
+        .hero-right {
+          order: -1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .hero-image-container {
+            .hero-image {
+              max-width: 290px; // Increased from 260px
+            }
+          }
+        }
+        
+        .hero-left {
+          .hero-title {
+            font-size: 2rem;
+          }
+          
+          .hero-subtitle {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

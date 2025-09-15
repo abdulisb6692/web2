@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/fonts/SFProText-Regular.woff") format("woff"), url("/fonts/SF-Pro-Text-Light.woff") format("woff"), url("/fonts/SF-Pro-Text-Semibold.woff") format("woff"), url("/fonts/SFProText-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  src: url("/fonts/PPEditorialNew-Regular.woff") format("woff"), url("/fonts/PPEditorialNew-Italic.woff") format("woff"), url("/fonts/PPEditorialNew-UltraboldItalic.woff") format("woff");
+  font-style: normal;
+}
+
+body {
+  font-family: "SF Pro Text", -apple-system, "PP Editorial New", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+/*# sourceMappingURL=global.css.map */

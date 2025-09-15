@@ -1,0 +1,110 @@
+/* Variables */
+/* Navbar Container */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: white;
+  position: relative;
+}
+
+.navbar .logo-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo-subtitle .logo {
+  cursor: pointer;
+}
+
+.navbar .logo-subtitle .subtitle {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 0.875rem;
+  color: #686868;
+}
+
+.navbar .desktop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navbar .desktop-menu li {
+  cursor: pointer;
+  color: #686868;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navbar .desktop-menu li a {
+  text-decoration: none;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 500;
+  color: #686868;
+}
+
+.navbar .desktop-menu .it {
+  font-family: "PP Editorial New", serif;
+  font-style: italic;
+}
+
+.navbar .mobile-menu .menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.navbar .mobile-menu .mobile-menu-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navbar .mobile-menu .mobile-menu-list li {
+  cursor: pointer;
+  color: #686868;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=navbabr.css.map */

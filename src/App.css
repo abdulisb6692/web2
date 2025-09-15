@@ -1,0 +1,32 @@
+/* App Container for Sticky Navbar Support */
+#root {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+}
+
+.app-container {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: 100%;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  position: relative;
+}
+
+/* Ensure sections have proper spacing for sticky navbar */
+section {
+  position: relative;
+  z-index: 1;
+}

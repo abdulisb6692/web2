@@ -1,0 +1,216 @@
+#work-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  margin-top: 10rem;
+}
+
+#work-container .work-header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+#work-container .work-header-content h1 {
+  font-size: 57px;
+  font-weight: 400;
+  color: #1e1e1e;
+  padding: 0;
+  margin: 0;
+  font-family: "PP Editorial New", serif;
+}
+
+#work-container .work-header-content p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1e1e1e;
+  padding: 0;
+  margin: 0;
+  width: 666px;
+  text-align: center;
+  line-height: 28px;
+}
+
+#work-container .work-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8rem;
+  margin-top: 8rem;
+}
+
+#work-container .work-cards .w-card {
+  width: 887px;
+  height: 542px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+#work-container .work-cards .w-card .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+#work-container .work-cards .w-card .card-title h3 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "PP Editorial New", serif;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+
+#work-container .work-cards .w-card:nth-child(1) {
+  background-color: #1E1E1E;
+  color: white;
+}
+
+#work-container .work-cards .w-card:nth-child(2) {
+  background-color: #F2E2FF;
+  color: #1E1E1E;
+}
+
+#work-container .work-cards .w-card:nth-child(3) {
+  background-color: #FFE3E3;
+  color: #1E1E1E;
+}
+
+#work-container .work-cards .w-card:nth-child(4) {
+  background-color: #E1F4FF;
+  color: #1E1E1E;
+}
+
+@media (max-width: 1024px) {
+  #work-container .work-header-content h1 {
+    font-size: 45px;
+  }
+  #work-container .work-header-content p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  #work-container .work-cards {
+    gap: 6rem;
+  }
+  #work-container .work-cards .w-card {
+    width: 80%;
+    height: auto;
+    width: 587px;
+    height: 342px;
+    padding: 2rem;
+  }
+  #work-container .work-cards .w-card .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #work-container .work-cards .w-card .image img {
+    width: 90%;
+  }
+  #work-container .work-cards .w-card .card-title h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-header-content h1 {
+    font-size: 35px;
+  }
+  .work-header-content p {
+    font-size: 16px;
+  }
+  .work-cards {
+    gap: 4rem;
+  }
+  .work-cards .w-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #work-container .work-header-content h1 {
+    font-size: 25px;
+  }
+  #work-container .work-header-content p {
+    font-size: 16px;
+    width: 100%;
+    line-height: 26px;
+  }
+  #work-container .work-cards {
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+  #work-container .work-cards .w-card {
+    width: 287px;
+    height: 142px;
+    padding: 2rem;
+  }
+  #work-container .work-cards .w-card .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #work-container .work-cards .w-card .image img {
+    width: 80%;
+  }
+  #work-container .work-cards .w-card .card-title h3 {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=work.css.map */
